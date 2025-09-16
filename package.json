@@ -1,0 +1,19 @@
+{
+  "name": "blog-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"turbo run dev",
+    "build":"turbo run build",
+    "lint":"turn run lint"
+  },
+  "packageManager": "npm@10.9.0",
+  "workspaces":["apps/*"],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.5.6"
+  }
+}
