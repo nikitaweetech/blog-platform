@@ -17,4 +17,6 @@ export class AuthService {
     }
     return user;
   }
+
+  async generateToken(userId: number) {}
 }
