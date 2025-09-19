@@ -60,32 +60,27 @@ type Post {
 
 type Query {
   posts: [Post!]!
-  comment(id: Int!): Comment!
   tag(id: Int!): Tag!
   like(id: Int!): Like!
 }
 
 type Mutation {
-  createComment(createCommentInput: CreateCommentInput!): Comment!
-  updateComment(updateCommentInput: UpdateCommentInput!): Comment!
-  removeComment(id: Int!): Comment!
+  createUser(createUserInput: CreateUserInput!): User
   createTag(createTagInput: CreateTagInput!): Tag!
   updateTag(updateTagInput: UpdateTagInput!): Tag!
   removeTag(id: Int!): Tag!
   createLike(createLikeInput: CreateLikeInput!): Like!
   updateLike(updateLikeInput: UpdateLikeInput!): Like!
   removeLike(id: Int!): Like!
+  signIn(signInInput: SignInInput!): String!
 }
 
-input CreateCommentInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-input UpdateCommentInput {
-  """Example field (placeholder)"""
-  exampleField: Int
-  id: Int!
+input CreateUserInput {
+  name: String!
+  email: String!
+  password: String!
+  bio: String
+  avatar: String
 }
 
 input CreateTagInput {
@@ -108,4 +103,9 @@ input UpdateLikeInput {
   """Example field (placeholder)"""
   exampleField: Int
   id: Int!
+}
+
+input SignInInput {
+  email: String!
+  password: String!
 }
