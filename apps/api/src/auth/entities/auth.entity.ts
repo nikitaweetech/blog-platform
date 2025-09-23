@@ -1,7 +1,16 @@
 import { ObjectType, Field, Int } from '@nestjs/graphql';
 
 @ObjectType()
-export class Auth {
-  @Field(() => Int, { description: 'Example field (placeholder)' })
-  exampleField: number;
+export class AuthPayloadResponse {
+  @Field(() => Int)
+  id: number;
+
+  @Field()
+  name: string;
+
+  @Field({ nullable: true })
+  avatar?: string;
+
+  @Field()
+  accessToken: string;
 }
