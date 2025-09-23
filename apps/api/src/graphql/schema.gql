@@ -10,7 +10,7 @@ type User {
   avatar: String!
   password: String!
   createdAt: DateTime!
-  updatedAt: String!
+  updatedAt: DateTime!
   posts: [Post!]!
   comment: [Comment!]!
 }
@@ -58,6 +58,13 @@ type Post {
   likes: [Like!]!
 }
 
+type AuthPayloadResponse {
+  id: Int!
+  name: String!
+  avatar: String
+  accessToken: String!
+}
+
 type Query {
   posts: [Post!]!
   tag(id: Int!): Tag!
@@ -72,7 +79,7 @@ type Mutation {
   createLike(createLikeInput: CreateLikeInput!): Like!
   updateLike(updateLikeInput: UpdateLikeInput!): Like!
   removeLike(id: Int!): Like!
-  signIn(signInInput: SignInInput!): String!
+  signIn(signInInput: SignInInput!): AuthPayloadResponse!
 }
 
 input CreateUserInput {
