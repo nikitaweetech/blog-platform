@@ -20,7 +20,12 @@
   },
   "dependencies": {
     "@nestjs/apollo": "^13.1.0",
+    "@nestjs/passport": "^11.0.5",
+    "@types/passport": "^1.0.17",
+    "@types/passport-jwt": "^4.0.1",
     "argon2": "^0.44.0",
-    "class-validator": "^0.14.2"
+    "class-validator": "^0.14.2",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1"
   }
 }
