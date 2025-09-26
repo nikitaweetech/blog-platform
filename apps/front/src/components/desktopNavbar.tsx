@@ -19,8 +19,8 @@ const DesktopNavBar=(props:Props)=>{
     const isScrollDown=scrollPostion>10;
     return (
         <nav 
-            className={cn("fixed transition-colors w-full z-50 text-white top-0 block",{
-                "bg-white text-gray-700 shadow-nd":isScrollDown,
+            className={cn(" hidden fixed transition-colors w-full z-50 text-white  md:block",{
+                "bg-white text-gray-700 shadow-md":isScrollDown,
             })}
             >
             <div className=" flex items-center px-4 py-4 container">
@@ -28,9 +28,6 @@ const DesktopNavBar=(props:Props)=>{
             </div>
             <hr className=" border-b border-gray-100 opacity-25"/>
         </nav>
-    
-
-      
     )
 }
 
