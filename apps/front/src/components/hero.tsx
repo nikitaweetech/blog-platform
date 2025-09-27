@@ -3,19 +3,19 @@ const Hero = () => {
     <div className=" bg-gradient-to-br from-sky-500 to-indigo-500  text-white pt-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center flex-wrap px-3">
         {/* left col */}
-        <div className=" flex flex-col w-full justify-center items-start md:w-2/5 text-center md:text-left">
-          <p className="capitalize tracking-wide w-full">
-            Explore inside, tutorials and stories for curious minds like
-          </p>
-          <h2 className="my-5 text-5xl font-bold leading-tight">
-            Welocome to Nikita&apos;s Blog System
-          </h2>
+        <div className="flex flex-col w-full justify-center items-start md:w-2/5 text-center md:text-left">
+        <p className="capitalize tracking-wide w-full">
+          Discover insights, guides, and stories crafted for curious thinkers.
+        </p>
 
-          <p className=" capitalize leading-normal text-xl">
-            Join a community that thrives on learning, creating and growing
-            together.{" "}
-          </p>
-        </div>
+        <h2 className="my-5 text-5xl font-bold leading-tight">
+          Welcome to Nikita&apos;s Blogging World
+        </h2>
+
+        <p className="capitalize leading-normal text-xl">
+          Be part of a community that loves to learn, share, and grow together.
+        </p>
+      </div>
 
         {/* riht col*/}
         <div className="w-full flex justify-center text-center py-7  md:w-3/5 ">
