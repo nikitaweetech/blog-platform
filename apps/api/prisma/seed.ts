@@ -21,14 +21,18 @@ async function main() {
     data: users,
   });
 
-  const posts = Array.from({ length: 40 }).map(() => ({
-    title: faker.lorem.sentence(),
-    slug: generateSlug(faker.lorem.sentence()),
-    content: faker.lorem.paragraphs(3),
-    thumbnail: faker.image.urlLoremFlickr(),
-    authorId: faker.number.int({ min: 1, max: 10 }),
-    published: true,
-  }));
+  const posts = Array.from({ length: 400 }).map((_, i) => {
+    const title = faker.lorem.sentence();
+    return {
+      title,
+      slug: generateSlug(title),
+      content: faker.lorem.paragraphs(3),
+      thumbnail: `https://picsum.photos/seed/post${i}/600/400`, // Stable & always works
+      authorId: faker.number.int({ min: 1, max: 10 }),
+      published: true,
+    };
+  });
+
 
   await Promise.all(
     posts.map(

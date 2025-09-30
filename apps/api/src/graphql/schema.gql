@@ -66,7 +66,8 @@ type AuthPayloadResponse {
 }
 
 type Query {
-  posts: [Post!]!
+  posts(skip: Float, take: Float): [Post!]!
+  postsCount: Int!
   tag(id: Int!): Tag!
   like(id: Int!): Like!
 }

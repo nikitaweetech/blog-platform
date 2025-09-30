@@ -16,11 +16,26 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
       {
-        hostname:"images.unsplash.com"
-      }
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "picsum.photos", // ✅ Added for stable seeding thumbnails
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "placehold.co", // ✅ Optional (if you want placeholder images)
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
-  /* config options here */
+  /* other config options here */
 };
 
 export default nextConfig;
