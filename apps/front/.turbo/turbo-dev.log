@@ -1,0 +1,884 @@
+
+> front@0.1.0 dev
+> next dev --turbopack
+
+[1G[0K[33m [33m[1m⚠[22m[39m Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/nikita/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/nikita/Desktop/Workspace/POCs/blog-platform/package-lock.json
+[39m
+   [1m[38;2;173;127;168m▲ Next.js 15.5.3[39m[22m (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.121:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1333ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 4.7s
+ GET / [32m200[39m in 5670ms
+ [32m[1m✓[22m[39m Compiled /favicon.ico in 358ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 732ms
+ [37m[1m○[22m[39m Compiling /blog/[slug]/[id] ...
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 2.2s
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:4:23
+[1m[31mModule not found[39m[22m: Can't resolve [32m'child_process'[39m
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mconst[39m [33mHTTP_STATUS_CODES[39m [33m=[39m require([32m"http"[39m)[33m.[39m[33mSTATUS_CODES[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mconst[39m { spawnSync } [33m=[39m require([32m"child_process"[39m)[33m;[39m
+ [90m   |[39m                       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mconst[39m { [33mURL[39m } [33m=[39m require([32m"whatwg-url"[39m)[33m;[39m
+ [90m 6 |[39m [36mconst[39m whatwgEncoding [33m=[39m require([32m"whatwg-encoding"[39m)[33m;[39m
+ [90m 7 |[39m [36mconst[39m tough [33m=[39m require([32m"tough-cookie"[39m)[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/generated/XMLHttpRequest.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/interfaces.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/Window.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js:3:12
+[1m[31mModule not found[39m[22m: Can't resolve [32m'fs'[39m
+[0m [90m 1 |[39m [32m"use strict"[39m[33m;[39m
+ [90m 2 |[39m [36mconst[39m path [33m=[39m require([32m"path"[39m)[33m;[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mconst[39m fs [33m=[39m require([32m"fs"[39m)[33m.[39mpromises[33m;[39m
+ [90m   |[39m            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mconst[39m vm [33m=[39m require([32m"vm"[39m)[33m;[39m
+ [90m 5 |[39m [36mconst[39m toughCookie [33m=[39m require([32m"tough-cookie"[39m)[33m;[39m
+ [90m 6 |[39m [36mconst[39m sniffHTMLEncoding [33m=[39m require([32m"html-encoding-sniffer"[39m)[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/resources/resource-loader.js:2:12
+[1m[31mModule not found[39m[22m: Can't resolve [32m'fs'[39m
+[0m [90m 1 |[39m [32m"use strict"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mconst[39m fs [33m=[39m require([32m"fs"[39m)[33m;[39m
+ [90m   |[39m            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mconst[39m { fileURLToPath } [33m=[39m require([32m"url"[39m)[33m;[39m
+ [90m 4 |[39m [36mconst[39m { parseURL } [33m=[39m require([32m"whatwg-url"[39m)[33m;[39m
+ [90m 5 |[39m [36mconst[39m dataURLFromRecord [33m=[39m require([32m"data-urls"[39m)[33m.[39mfromURLRecord[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/resources/resource-loader.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/helpers/style-rules.js:4:12
+[1m[31mModule not found[39m[22m: Can't resolve [32m'fs'[39m
+[0m [90m 2 |[39m [36mconst[39m cssom [33m=[39m require([32m"rrweb-cssom"[39m)[33m;[39m
+ [90m 3 |[39m [36mconst[39m path [33m=[39m require([32m"path"[39m)[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mconst[39m fs [33m=[39m require([32m"fs"[39m)[33m;[39m
+ [90m   |[39m            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mconst[39m { [33mCSSStyleDeclaration[39m } [33m=[39m require([32m"cssstyle"[39m)[33m;[39m
+ [90m 6 |[39m [36mconst[39m { getSpecifiedColor[33m,[39m getComputedOrUsedColor } [33m=[39m require([32m"./colors"[39m)[33m;[39m
+ [90m 7 |[39m [36mconst[39m { asciiLowercase } [33m=[39m require([32m"./strings"[39m)[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/helpers/style-rules.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/nodes/Node-impl.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/nodes/DocumentFragment-impl.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/generated/DocumentFragment.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/parser/xml.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/parser/index.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:2:12
+[1m[31mModule not found[39m[22m: Can't resolve [32m'fs'[39m
+[0m [90m 1 |[39m [32m"use strict"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mconst[39m fs [33m=[39m require([32m"fs"[39m)[33m;[39m
+ [90m   |[39m            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mconst[39m { [33mEventEmitter[39m } [33m=[39m require([32m"events"[39m)[33m;[39m
+ [90m 4 |[39m [36mconst[39m { [33mURL[39m } [33m=[39m require([32m"whatwg-url"[39m)[33m;[39m
+ [90m 5 |[39m [36mconst[39m parseDataURL [33m=[39m require([32m"data-urls"[39m)[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/generated/XMLHttpRequest.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/interfaces.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/Window.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/agent-base/dist/index.js:30:26
+[1m[31mModule not found[39m[22m: Can't resolve [32m'net'[39m
+[0m [90m 28 |[39m [33mObject[39m[33m.[39mdefineProperty(exports[33m,[39m [32m"__esModule"[39m[33m,[39m { value[33m:[39m [36mtrue[39m })[33m;[39m
+ [90m 29 |[39m exports[33m.[39m[33mAgent[39m [33m=[39m [36mvoid[39m [35m0[39m[33m;[39m
+[31m[1m>[22m[39m[90m 30 |[39m [36mconst[39m net [33m=[39m __importStar(require([32m"net"[39m))[33m;[39m
+ [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 31 |[39m [36mconst[39m http [33m=[39m __importStar(require([32m"http"[39m))[33m;[39m
+ [90m 32 |[39m [36mconst[39m https_1 [33m=[39m require([32m"https"[39m)[33m;[39m
+ [90m 33 |[39m __exportStar(require([32m"./helpers"[39m)[33m,[39m exports)[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/agent-base/dist/index.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/https-proxy-agent/dist/index.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/helpers/agent-factory.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/resources/resource-loader.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/http-proxy-agent/dist/index.js:30:26
+[1m[31mModule not found[39m[22m: Can't resolve [32m'net'[39m
+[0m [90m 28 |[39m [33mObject[39m[33m.[39mdefineProperty(exports[33m,[39m [32m"__esModule"[39m[33m,[39m { value[33m:[39m [36mtrue[39m })[33m;[39m
+ [90m 29 |[39m exports[33m.[39m[33mHttpProxyAgent[39m [33m=[39m [36mvoid[39m [35m0[39m[33m;[39m
+[31m[1m>[22m[39m[90m 30 |[39m [36mconst[39m net [33m=[39m __importStar(require([32m"net"[39m))[33m;[39m
+ [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 31 |[39m [36mconst[39m tls [33m=[39m __importStar(require([32m"tls"[39m))[33m;[39m
+ [90m 32 |[39m [36mconst[39m debug_1 [33m=[39m __importDefault(require([32m"debug"[39m))[33m;[39m
+ [90m 33 |[39m [36mconst[39m events_1 [33m=[39m require([32m"events"[39m)[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/http-proxy-agent/dist/index.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/helpers/agent-factory.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/resources/resource-loader.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/https-proxy-agent/dist/index.js:30:26
+[1m[31mModule not found[39m[22m: Can't resolve [32m'net'[39m
+[0m [90m 28 |[39m [33mObject[39m[33m.[39mdefineProperty(exports[33m,[39m [32m"__esModule"[39m[33m,[39m { value[33m:[39m [36mtrue[39m })[33m;[39m
+ [90m 29 |[39m exports[33m.[39m[33mHttpsProxyAgent[39m [33m=[39m [36mvoid[39m [35m0[39m[33m;[39m
+[31m[1m>[22m[39m[90m 30 |[39m [36mconst[39m net [33m=[39m __importStar(require([32m"net"[39m))[33m;[39m
+ [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 31 |[39m [36mconst[39m tls [33m=[39m __importStar(require([32m"tls"[39m))[33m;[39m
+ [90m 32 |[39m [36mconst[39m assert_1 [33m=[39m __importDefault(require([32m"assert"[39m))[33m;[39m
+ [90m 33 |[39m [36mconst[39m debug_1 [33m=[39m __importDefault(require([32m"debug"[39m))[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/https-proxy-agent/dist/index.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/helpers/agent-factory.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/resources/resource-loader.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/http-proxy-agent/dist/index.js:31:26
+[1m[31mModule not found[39m[22m: Can't resolve [32m'tls'[39m
+[0m [90m 29 |[39m exports[33m.[39m[33mHttpProxyAgent[39m [33m=[39m [36mvoid[39m [35m0[39m[33m;[39m
+ [90m 30 |[39m [36mconst[39m net [33m=[39m __importStar(require([32m"net"[39m))[33m;[39m
+[31m[1m>[22m[39m[90m 31 |[39m [36mconst[39m tls [33m=[39m __importStar(require([32m"tls"[39m))[33m;[39m
+ [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 32 |[39m [36mconst[39m debug_1 [33m=[39m __importDefault(require([32m"debug"[39m))[33m;[39m
+ [90m 33 |[39m [36mconst[39m events_1 [33m=[39m require([32m"events"[39m)[33m;[39m
+ [90m 34 |[39m [36mconst[39m agent_base_1 [33m=[39m require([32m"agent-base"[39m)[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/http-proxy-agent/dist/index.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/helpers/agent-factory.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/resources/resource-loader.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Desktop/Workspace/POCs/blog-platform/node_modules/https-proxy-agent/dist/index.js:31:26
+[1m[31mModule not found[39m[22m: Can't resolve [32m'tls'[39m
+[0m [90m 29 |[39m exports[33m.[39m[33mHttpsProxyAgent[39m [33m=[39m [36mvoid[39m [35m0[39m[33m;[39m
+ [90m 30 |[39m [36mconst[39m net [33m=[39m __importStar(require([32m"net"[39m))[33m;[39m
+[31m[1m>[22m[39m[90m 31 |[39m [36mconst[39m tls [33m=[39m __importStar(require([32m"tls"[39m))[33m;[39m
+ [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 32 |[39m [36mconst[39m assert_1 [33m=[39m __importDefault(require([32m"assert"[39m))[33m;[39m
+ [90m 33 |[39m [36mconst[39m debug_1 [33m=[39m __importDefault(require([32m"debug"[39m))[33m;[39m
+ [90m 34 |[39m [36mconst[39m agent_base_1 [33m=[39m require([32m"agent-base"[39m)[33m;[39m[0m
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/https-proxy-agent/dist/index.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/living/helpers/agent-factory.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/jsdom/browser/resources/resource-loader.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/node_modules/jsdom/lib/api.js [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Client Component Browser]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx [Server Component]
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 1664ms
+ GET /blog/hfsdak/1 [31m500[39m in 4118ms
+ GET /favicon.ico [31m500[39m in 115ms
+ [32m[1m✓[22m[39m Compiled in 92ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 110ms
+ GET / [32m200[39m in 378ms
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:10:31)
+[0m [90m  8 |[39m
+ [90m  9 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 10 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 11 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 12 |[39m }[33m;[39m
+ [90m 13 |[39m[0m {
+  digest: [32m'2383807047'[39m
+}
+ GET /blog/hfsdak/1 [31m500[39m in 1246ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 822ms
+ GET /favicon.ico [32m200[39m in 333ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 266ms
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+[31m [31m[1m⨯[22m[39m ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx:2:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'isomorphic-dompurify'[39m
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mDOMPurify[39m [36mfrom[39m [32m"isomorphic-dompurify"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m
+ [90m 5 |[39m type [33mProps[39m [33m=[39m {[0m
+
+
+
+Import trace:
+  Server Component:
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/_components/SanitizeContents.tsx
+    ./Desktop/Workspace/POCs/blog-platform/apps/front/src/app/blog/[slug]/[id]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+[39m
+ [32m[1m✓[22m[39m Compiled in 128ms
+ [32m[1m✓[22m[39m Compiled in 97ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 89ms
+ GET /blog/hfsdak/1 [32m200[39m in 580ms
+ GET / [32m200[39m in 630ms
+ GET / [32m200[39m in 415ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 268ms
+ [32m[1m✓[22m[39m Compiled in 119ms
+ [32m[1m✓[22m[39m Compiled in 125ms
+ GET /blog/hfsdak/1 [32m200[39m in 493ms
+ GET /blog/hfsdak/1 [32m200[39m in 186ms
+ GET /blog/hfsdak/1 [32m200[39m in 218ms
+ GET /blog/hfsdak/1 [32m200[39m in 232ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 287ms
+ [32m[1m✓[22m[39m Compiled in 135ms
+
+ GET /blog/hfsdak/1 [32m200[39m in 546ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 311ms
+
+ GET /blog/hfsdak/1 [32m200[39m in 233ms
+
+ GET /blog/hfsdak/1 [32m200[39m in 252ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 371ms
+ [32m[1m✓[22m[39m Compiled in 136ms
+ [32m[1m✓[22m[39m Compiled in 117ms
+ [32m[1m✓[22m[39m Compiled in 122ms
+
+ GET /blog/hfsdak/1 [32m200[39m in 214ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 399ms
+ [32m[1m✓[22m[39m Compiled in 118ms
+ GET /blog/hfsdak/1 [32m200[39m in 518ms
+
+ GET /blog/hfsdak/1 [32m200[39m in 149ms
+
+
+ GET /blog/hfsdak/1 [32m200[39m in 203ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 425ms
+ [32m[1m✓[22m[39m Compiled in 128ms
+ GET /blog/hfsdak/1 [32m200[39m in 232ms
+
+
+ GET /blog/hfsdak/1 [32m200[39m in 210ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 401ms
+
+ GET /blog/hfsdak/1 [32m200[39m in 224ms
+ GET /blog/hfsdak/1 [32m200[39m in 312ms
+
+
+
+ GET /blog/hfsdak/1 [32m200[39m in 502ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 313ms
+ [32m[1m✓[22m[39m Compiled in 140ms
+ [32m[1m✓[22m[39m Compiled in 142ms
+
+ GET /blog/hfsdak/1 [32m200[39m in 227ms
+ GET /blog/hfsdak/1 [32m200[39m in 204ms
+
+
+ GET /blog/hfsdak/1 [32m200[39m in 418ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 298ms
+ GET /blog/hfsdak/1 [32m200[39m in 182ms
+
+
+ GET /blog/hfsdak/1 [32m200[39m in 187ms
+ GET /blog/hfsdak/1 [32m200[39m in 166ms
+
+
+ GET /blog/hfsdak/1 [32m200[39m in 558ms
+
+
+
+ GET /blog/hfsdak/1 [32m200[39m in 215ms
+
+
+
+ GET /blog/hfsdak/1 [32m200[39m in 253ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 417ms
+ [32m[1m✓[22m[39m Compiled in 133ms
+ [32m[1m✓[22m[39m Compiled in 117ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 59ms
+ GET /blog/hfsdak/1 [32m200[39m in 467ms
+ GET / [32m200[39m in 503ms
+ [32m[1m✓[22m[39m Compiled in 140ms
+ [32m[1m✓[22m[39m Compiled in 112ms
+ GET /blog/hfsdak/1 [32m200[39m in 665ms
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:11:31)
+[0m [90m  9 |[39m
+ [90m 10 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 11 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 12 |[39m   console[33m.[39mlog(cleanHtml)
+ [90m 13 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 14 |[39m }[33m;[39m[0m {
+  digest: [32m'1655958308'[39m
+}
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:11:31)
+[0m [90m  9 |[39m
+ [90m 10 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 11 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 12 |[39m   console[33m.[39mlog(cleanHtml)
+ [90m 13 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 14 |[39m }[33m;[39m[0m {
+  digest: [32m'1655958308'[39m
+}
+ GET /blog/hfsdak/1 [31m500[39m in 275ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 851ms
+ GET /favicon.ico [32m200[39m in 732ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 264ms
+ GET /blog/hfsdak/1 [32m200[39m in 218ms
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:11:31)
+[0m [90m  9 |[39m
+ [90m 10 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 11 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 12 |[39m   console[33m.[39mlog(cleanHtml)
+ [90m 13 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 14 |[39m }[33m;[39m[0m {
+  digest: [32m'1655958308'[39m
+}
+ GET /blog/hfsdak/1 [32m200[39m in 180ms
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:11:31)
+[0m [90m  9 |[39m
+ [90m 10 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 11 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 12 |[39m   console[33m.[39mlog(cleanHtml)
+ [90m 13 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 14 |[39m }[33m;[39m[0m {
+  digest: [32m'1655958308'[39m
+}
+ GET /blog/hfsdak/1 [32m200[39m in 136ms
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:11:31)
+[0m [90m  9 |[39m
+ [90m 10 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 11 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 12 |[39m   console[33m.[39mlog(cleanHtml)
+ [90m 13 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 14 |[39m }[33m;[39m[0m {
+  digest: [32m'1655958308'[39m
+}
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:11:31)
+[0m [90m  9 |[39m
+ [90m 10 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 11 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 12 |[39m   console[33m.[39mlog(cleanHtml)
+ [90m 13 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 14 |[39m }[33m;[39m[0m {
+  digest: [32m'1655958308'[39m
+}
+ GET /blog/hfsdak/1 [31m500[39m in 172ms
+ GET /blog/hfsdak/1 [32m200[39m in 183ms
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:11:31)
+[0m [90m  9 |[39m
+ [90m 10 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 11 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 12 |[39m   console[33m.[39mlog(cleanHtml)
+ [90m 13 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 14 |[39m }[33m;[39m[0m {
+  digest: [32m'1655958308'[39m
+}
+ [31m[1m⨯[22m[39m TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Workspace$2f$POCs$2f$blog$2d$platform$2f$node_modules$2f$dompurify$2f$dist$2f$purify$2e$es$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.default.sanitize is not a function
+    at SanitizeContents (src/app/blog/[slug]/_components/SanitizeContents.tsx:11:31)
+[0m [90m  9 |[39m
+ [90m 10 |[39m [36mconst[39m [33mSanitizeContents[39m [33m=[39m (props[33m:[39m [33mProps[39m) [33m=>[39m {
+[31m[1m>[22m[39m[90m 11 |[39m   [36mconst[39m cleanHtml [33m=[39m [33mDOMPurify[39m[33m.[39msanitize(props[33m.[39mcontents)[33m;[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 12 |[39m   console[33m.[39mlog(cleanHtml)
+ [90m 13 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m dangerouslySetInnerHTML[33m=[39m{{ __html[33m:[39m cleanHtml }} [33m/[39m[33m>[39m[33m;[39m
+ [90m 14 |[39m }[33m;[39m[0m {
+  digest: [32m'1655958308'[39m
+}
+ GET /blog/hfsdak/1 [31m500[39m in 187ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 775ms
+ GET /favicon.ico [32m200[39m in 295ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 260ms
+ [32m[1m✓[22m[39m Compiled in 119ms
+ [32m[1m✓[22m[39m Compiled in 119ms
+ [32m[1m✓[22m[39m Compiled in 112ms
+ [32m[1m✓[22m[39m Compiled in 133ms
+ [32m[1m✓[22m[39m Compiled in 116ms
+ [32m[1m✓[22m[39m Compiled in 139ms
+ GET /blog/hfsdak/1 [32m200[39m in 568ms
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+ GET /blog/hfsdak/1 [32m200[39m in 191ms
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+ GET /blog/hfsdak/1 [32m200[39m in 488ms
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+ GET /blog/hfsdak/1 [32m200[39m in 262ms
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+Vigor adduco caelum cavus error cometes vigilo cunctatio occaecati. Nobis umerus vereor absque blandior consequatur. Subnecto verto sequi canonicus uter asper.
+Spes suasoria argumentum claudeo quis calco decimus mollitia arguo. Tenax cuppedia calculus nobis cervus. Arbor perferendis sum dolores crebro usque tempus quia.
+Dedico paulatim ceno tepesco cuius quo carbo. Utroque deserunt subnecto tendo spiculum solium villa audeo. Condico spectaculum asper autus fugit pecus.
+ GET /blog/hfsdak/1 [32m200[39m in 173ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 372ms
+ [32m[1m✓[22m[39m Compiled in 119ms
+ [32m[1m✓[22m[39m Compiled in 135ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 66ms
+ GET /blog/hfsdak/1 [32m200[39m in 475ms
+ GET / [32m200[39m in 531ms
+ GET /blog/hfsdak/1 [32m200[39m in 369ms
+ GET /blog/hfsdak/1 [32m200[39m in 282ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 363ms
+ [32m[1m✓[22m[39m Compiled in 135ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 61ms
+ GET /blog/hfsdak/1 [32m200[39m in 480ms
+ GET / [32m200[39m in 497ms
+ GET /blog/hfsdak/1 [32m200[39m in 488ms
+ GET /blog/hfsdak/1 [32m200[39m in 104ms
+ GET /blog/hfsdak/1 [32m200[39m in 269ms
+ GET /blog/hfsdak/1 [32m200[39m in 359ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 379ms
+ [32m[1m✓[22m[39m Compiled in 117ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 63ms
+ GET /blog/hfsdak/1 [32m200[39m in 399ms
+ GET / [32m200[39m in 421ms
+ [32m[1m✓[22m[39m Compiled in 115ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 52ms
+ GET /blog/hfsdak/1 [32m200[39m in 465ms
+ GET / [32m200[39m in 494ms
+ [32m[1m✓[22m[39m Compiled in 130ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 50ms
+ GET /blog/hfsdak/1 [32m200[39m in 424ms
+ GET / [32m200[39m in 446ms
+ [32m[1m✓[22m[39m Compiled in 119ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 46ms
+ GET /blog/hfsdak/1 [32m200[39m in 427ms
+ GET / [32m200[39m in 446ms
+ [32m[1m✓[22m[39m Compiled in 126ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 60ms
+ GET /blog/hfsdak/1 [32m200[39m in 461ms
+ GET / [32m200[39m in 476ms
+ [32m[1m✓[22m[39m Compiled in 131ms
+ GET /blog/hfsdak/1 [32m200[39m in 713ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 383ms
+ [32m[1m✓[22m[39m Compiled in 121ms
+ [32m[1m✓[22m[39m Compiled in 123ms
+ [32m[1m✓[22m[39m Compiled in 126ms
+ [32m[1m✓[22m[39m Compiled / in 66ms
+ GET /blog/hfsdak/1 [32m200[39m in 494ms
+ GET / [32m200[39m in 530ms
+ GET /blog/hfsdak/1 [32m200[39m in 323ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 430ms
+ [32m[1m✓[22m[39m Compiled in 125ms
+ [32m[1m✓[22m[39m Compiled / in 48ms
+ GET /blog/hfsdak/1 [32m200[39m in 392ms
+ GET / [32m200[39m in 407ms
+ [32m[1m✓[22m[39m Compiled in 121ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 59ms
+ GET /blog/hfsdak/1 [32m200[39m in 486ms
+ GET / [32m200[39m in 527ms
+ GET / [32m200[39m in 138ms
+ [32m[1m✓[22m[39m Compiled in 120ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 58ms
+ GET /blog/hfsdak/1 [32m200[39m in 441ms
+ GET / [32m200[39m in 459ms
+ [32m[1m✓[22m[39m Compiled in 123ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 61ms
+ GET /blog/hfsdak/1 [32m200[39m in 451ms
+ GET / [32m200[39m in 522ms
+ [32m[1m✓[22m[39m Compiled in 132ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 54ms
+ GET /blog/hfsdak/1 [32m200[39m in 430ms
+ GET / [32m200[39m in 452ms
+ [32m[1m✓[22m[39m Compiled in 119ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 49ms
+ GET /blog/hfsdak/1 [32m200[39m in 390ms
+ GET / [32m200[39m in 407ms
+ [32m[1m✓[22m[39m Compiled in 136ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 67ms
+ GET /blog/hfsdak/1 [32m200[39m in 399ms
+ GET / [32m200[39m in 421ms
+ [32m[1m✓[22m[39m Compiled in 131ms
+ GET /blog/hfsdak/1 [32m200[39m in 643ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 371ms
+ [32m[1m✓[22m[39m Compiled in 144ms
+ [32m[1m✓[22m[39m Compiled in 143ms
+ [32m[1m✓[22m[39m Compiled / in 52ms
+ GET /blog/hfsdak/1 [32m200[39m in 405ms
+ GET / [32m200[39m in 508ms
+ GET /blog/hfsdak/1 [32m200[39m in 360ms
+ GET / [32m200[39m in 379ms
+ GET / [32m200[39m in 186ms
+ GET / [32m200[39m in 148ms
+ GET / [32m200[39m in 129ms
+ GET / [32m200[39m in 298ms
+ GET / [32m200[39m in 163ms
+ GET / [32m200[39m in 308ms
+ GET / [32m200[39m in 508ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 279ms
+ GET / [32m200[39m in 113ms
+ GET /blog/hfsdak/1 [32m200[39m in 204ms
+ GET /blog/hfsdak/1 [32m200[39m in 223ms
+ GET /blog/hfsdak/1 [32m200[39m in 254ms
+ GET /blog/hfsdak/1 [32m200[39m in 316ms
+ GET /blog/hfsdak/1 [32m200[39m in 193ms
+ GET /blog/hfsdak/1 [32m200[39m in 290ms
+ GET /blog/hfsdak/1 [32m200[39m in 183ms
+ GET /blog/hfsdak/1 [32m200[39m in 185ms
+ GET /blog/hfsdak/1 [32m200[39m in 155ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 301ms
+ GET / [32m200[39m in 331ms
+ GET / [32m200[39m in 318ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 332ms
+ GET / [32m200[39m in 461ms
+ GET /blog/hfsdak/1 [32m200[39m in 286ms
+ GET /blog/hfsdak/1 [32m200[39m in 588ms
+ GET /blog/hfsdak/1 [32m200[39m in 403ms
+ GET /blog/hfsdak/1 [32m200[39m in 414ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 345ms
+ GET / [32m200[39m in 415ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 293ms
+ GET /blog/hfsdak/1 [32m200[39m in 234ms
+ GET /blog/hfsdak/1 [32m200[39m in 590ms
+ GET /favicon.ico?favicon.0b3bf435.ico [32m200[39m in 383ms
+ [32m[1m✓[22m[39m Compiled in 136ms
+ [32m[1m✓[22m[39m Compiled /blog/[slug]/[id] in 83ms
+ GET /blog/hfsdak/1 [32m200[39m in 515ms
+ GET / [32m200[39m in 576ms
+ GET /blog/hfsdak/1 [32m200[39m in 411ms
+ GET / [32m200[39m in 457ms
