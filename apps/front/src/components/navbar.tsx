@@ -1,24 +1,19 @@
 import Link from "next/link";
+type Props = {};
 
-type Props={};
-
-const Navbar=(props:Props)=>{
-    return (
+const Navbar = (props: Props) => {
+  return (
     <>
-        <h1 className=" text-2xl font-bold p-2">My Modern Blog</h1>
-        <div className=" flex  flex-col md:flex-row gap-2 ml-auto [&>a]:py-2  [&>a]:px-4 [&>a]:transition [&>a]:rounded-md [&>a:hover]:text-sky-100 [&>a:hover]:bg-sky-500">
-           <Link href="/" className="">
-                Blog
-           </Link>
-           <Link href="#about" className="">
-                About
-           </Link>
-           <Link href="#contact" className="">
-                Contact
-           </Link>
-        </div>
+      <div className="flex-shrink-0">
+        <h1 className="text-2xl font-bold">My Modern Blog</h1>
+      </div>
+      <div className="flex gap-2 [&>a]:py-2 [&>a]:px-4 [&>a]:transition [&>a]:rounded-md [&>a:hover]:text-sky-100 [&>a:hover]:bg-sky-500">
+        <Link href="/">Blog</Link>
+        <Link href="#about">About</Link>
+        <Link href="#contact">Contact</Link>
+      </div>
     </>
-    );
-}
+  );
+};
 
 export default Navbar;
