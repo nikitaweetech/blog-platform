@@ -26,7 +26,7 @@ export class User {
   createdAt: Date;
 
   @Field()
-  updatedAt: string;
+  updatedAt: Date;
 
   @Field(() => [Post])
   posts?: [Post];
