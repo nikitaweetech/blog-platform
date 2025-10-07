@@ -15,12 +15,16 @@ export class PostResolver {
     @Args('skip', { nullable: true }) skip: number,
     @Args('take', { nullable: true }) take: number,
   ) {
-    console.log(context.req.user);
     return this.postService.findAll({ skip, take });
   }
 
   @Query(() => Int, { name: 'postsCount' })
   async postsCount() {
     return await this.postService.postsCount();
+  }
+
+  @Query(() => Post)
+  async getPostById(@Args('id', { type: () => Int }) id: number) {
+    return await this.postService.findOne(id);
   }
 }
