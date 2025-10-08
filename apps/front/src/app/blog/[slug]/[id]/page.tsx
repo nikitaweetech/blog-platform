@@ -1,6 +1,6 @@
 import { fetchPostById } from "@/lib/actions/postActions";
 import Image from "next/image";
-import SanitizeContents from "../_components/SanitizeContents";
+import SanitizeContents from "./_components/SanitizeContents";
 
 type Props = {
     params:{
