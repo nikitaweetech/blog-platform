@@ -4,18 +4,17 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center flex-wrap px-3">
         {/* left col */}
         <div className="flex flex-col w-full justify-center items-start md:w-2/5 text-center md:text-left">
-        <p className="capitalize tracking-wide w-full">
-          Discover insights, guides, and stories crafted for curious thinkers.
-        </p>
+          <p className="capitalize tracking-wide w-full">
+            Discover insights, guides, and stories crafted for curious thinkers.
+          </p>
 
-        <h2 className="my-5 text-5xl font-bold leading-tight">
-          Welcome to Nikita&apos;s Blogging World
-        </h2>
-
-        <p className="capitalize leading-normal text-xl">
-          Be part of a community that loves to learn, share, and grow together.
-        </p>
-      </div>
+          <h2 className="my-5 text-5xl font-bold leading-tight">
+            Welcome to a World of Endless Curiosity
+          </h2>
+          <p className="capitalize leading-normal text-xl">
+            Dive into thoughts, stories, and ideas that go beyond boundaries.
+          </p>
+        </div>
 
         {/* riht col*/}
         <div className="w-full flex justify-center text-center py-7  md:w-3/5 ">
@@ -25,10 +24,9 @@ const Hero = () => {
             className=" w-full  md:w-3/4 z-30"
           />
         </div>
-       
       </div>
-    <div className="realtive -mt-10 lg:-mt-24">
-          <svg
+      <div className="realtive -mt-10 lg:-mt-24">
+        <svg
           viewBox="0 0 1428 174"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
