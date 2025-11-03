@@ -1,7 +1,11 @@
+import SignInPage from "@/app/auth/signin/page";
+import { getSession } from "@/lib/session";
 import Link from "next/link";
+import SignInPanel from "./signinPanel";
 type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = async(props: Props) => {
+  const session=await getSession();
   return (
     <>
       <div className="flex-shrink-0">
@@ -11,6 +15,7 @@ const Navbar = (props: Props) => {
         <Link href="/">Blog</Link>
         <Link href="#about">About</Link>
         <Link href="#contact">Contact</Link>
+        {session && session.user ?<a href={"/api/auth/signout"}>Sign Out</a>:(<SignInPanel />)}
       </div>
     </>
   );
