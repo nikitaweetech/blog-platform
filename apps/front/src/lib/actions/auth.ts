@@ -8,6 +8,7 @@ import { SignUpFormSchema } from "../zodSchemas/signUpFormSchema";
 import { print } from "graphql";
 import { LoginInFormSchema } from "../zodSchemas/loginInFormSchema";
 import { revalidatePath } from "next/cache";
+import { createSession } from "../session";
 
 export async function signUp(
   state: SignUpFormState,
@@ -61,6 +62,14 @@ export async function signIn(state: SignUpFormState,formData: FormData):Promise<
     };
   }
   //create a session
+  await createSession({
+    user:{
+      id:data.signIn.id ,
+      name:data.signIn.name,
+      avatar:data.signIn.avatar
+    },
+    accessToken:data.signIn.accessToken
+  });
   revalidatePath("/");
   redirect("/");
 }
